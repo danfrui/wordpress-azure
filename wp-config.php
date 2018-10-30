@@ -30,12 +30,6 @@ $connectstr_dbpassword = '';
 
 
 foreach ($_SERVER as $key => $value) {
-	echo $key;
-	echo $value;
-}
-
-
-foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
         continue;
     }
@@ -45,6 +39,11 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
+
+$connectstr_dbhost = 'testmysqlda.mysql.database.azure.com;';
+$connectstr_dbname = 'wordpress';
+$connectstr_dbusername = 'danfrui@testmysqlda';
+$connectstr_dbpassword = 'Ty258yh123456789!';
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
