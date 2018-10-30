@@ -1,5 +1,6 @@
 
 
+
 <?php
 /**
  * The base configuration for WordPress
@@ -29,6 +30,7 @@ $connectstr_dbpassword = '';
 
 
 foreach ($_SERVER as $key => $value) {
+	echo $key;
 	echo $value;
 }
 
