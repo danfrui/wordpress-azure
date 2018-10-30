@@ -28,6 +28,8 @@ $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 
 echo $_SERVER['SERVER_NAME'];
+echo $_SERVER['MYSQLCONNSTR_mysql'];
+
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
