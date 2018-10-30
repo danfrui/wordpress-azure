@@ -29,7 +29,7 @@ $connectstr_dbpassword = '';
 
 
 foreach ($_SERVER as $key => $value {
-	echo $value;
+	echo $key;
 }
 
 
