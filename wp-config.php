@@ -28,7 +28,7 @@ $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
 
 
-foreach ($_SERVER as $key => $value {
+foreach ($_SERVER as $key => $value) {
 	echo $key;
 }
 
