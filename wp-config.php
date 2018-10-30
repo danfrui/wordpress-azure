@@ -9,8 +9,7 @@
  * installation. You don't have to use the web site, you can
  * copy this file to "wp-config.php" and fill in the values.
  *
- * This file contains the following configurations:
- *
+ * This file contains the following configurations: *
  * * MySQL settings
  * * Secret keys
  * * Database table prefix
@@ -40,7 +39,7 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
 
-$connectstr_dbhost = 'testmysqlda.mysql.database.azure.com;';
+$connectstr_dbhost = 'testmysqlda.mysql.database.azure.com';
 $connectstr_dbname = 'wordpress';
 $connectstr_dbusername = 'danfrui@testmysqlda';
 $connectstr_dbpassword = 'Ty258yh123456789!';
