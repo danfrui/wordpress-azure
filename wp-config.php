@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * The base configuration for WordPress
@@ -24,6 +26,8 @@ $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
 $connectstr_dbpassword = '';
+
+echo $_SERVER['SERVER_NAME'];
 
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
