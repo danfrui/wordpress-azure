@@ -32,7 +32,7 @@ foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_") !== 0) {
         continue;
     }
-    echo $value;
+    print $value;
     $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
     $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
     $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
